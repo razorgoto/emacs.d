@@ -5,15 +5,22 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
- '(custom-enabled-themes (quote (wheatgrass)))
+ '(custom-enabled-themes (quote (dichromacy)))
+ '(display-battery-mode t)
+ '(display-time-mode t)
+ '(global-display-line-numbers-mode t)
+ '(global-visual-line-mode 1)
  '(package-selected-packages
    (quote
-    (xref-js2 js2-mode web-beautify web-mode web-search wgrep csv-mode ereader ini-mode json-mode json-navigator json-reformat markdown-mode markdown-mode+ markdown-preview-eww markdown-preview-mode orca org-evil org-journal powershell w32-browser xml+ evil-org evil-tutor ## pocket-reader evil)))
+    (anaconda-mode company company-box company-emoji company-quickhelp company-shell company-web csharp-mode dashboard dashboard-hackernews dashboard-project-status json caps-lock xref-js2 js2-mode web-beautify web-mode web-search wgrep csv-mode ereader ini-mode json-mode json-navigator json-reformat markdown-mode markdown-mode+ markdown-preview-eww markdown-preview-mode orca org-evil org-journal powershell w32-browser xml+ evil-org evil-tutor ## pocket-reader evil)))
  '(show-paren-mode t))
 
 
+(setq browse-url-browser-function 'browse-url-chromium) ; google's browser
 
 ;; Set backup file to be save in system defined temp folders
 (setq backup-directory-alist
@@ -56,3 +63,5 @@
 (cond
  ((string-equal system-type "windows-nt")
   (load "powershell.el")))
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
