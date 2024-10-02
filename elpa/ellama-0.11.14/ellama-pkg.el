@@ -1,0 +1,2 @@
+;; Generated package description from ellama.el  -*- no-byte-compile: t -*-
+(define-package "ellama" "0.11.14" "Tool for interacting with LLMs" '((emacs "28.1") (llm "0.6.0") (spinner "1.7.4") (compat "29.1")) :commit "74767cbd6dc582bd6ce99a83bc84d41bfad4b4ee" :authors '(("Sergey Kostyaev" . "sskostyaev@gmail.com")) :maintainer '("Sergey Kostyaev" . "sskostyaev@gmail.com") :keywords '("help" "local" "tools") :url "http://github.com/s-kostyaev/ellama")

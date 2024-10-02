@@ -1,0 +1,23 @@
+#s(ellama-session "Dummy Text (llama3.2)" #s(llm-ollama nil nil (("num_ctx" . 8192)) "http" "localhost" 11434 "llama3.2" "nomic-embed-text") "/Users/sammylao/.emacs.d/ellama-sessions/Dummy Text (llama3.2).org" #s(llm-chat-prompt nil nil (#s(llm-chat-prompt-interaction user "generate some text for me. about 1 page worth of dummy text." nil) #s(llm-chat-prompt-interaction assistant "Here is a page's worth of dummy text:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan sem ut ligula scelerisque sollicitudin. Ut at sagittis augue. Praesent quis rhoncus justo. Aliquam erat volutpat. Donec sed odio dui. Sed et ante id sapien ultricies vehicula.
+
+Quisque convallis, magna non lacinia porttitor, nulla purus laoreet nulla, sit amet pulvinar sapien ex vel est. Vivamus in diam dignissim, auctor risus vel, accumsan nisi. Nunc et ante eu tellus gravida congue sed at turpis. Integer rutrum metus non nunc feugiat sodales.
+
+Mauris malesuada, elit sit amet blandit fringilla, nulla magna laoreet dui, quis convallis eros ex et sapien. Fusce id massa a ligula venenatis sagittis sit amet non risus. Quisque ornare ultricies lacus eu viverra. Etiam at diam vel justo elementum accumsan sit amet sed elit.
+
+Sed sed turpis et nunc mollis rutrum. Donec ornare libero non tellus porta, id facilisis leo pulvinar. Proin in purus in arcu malesuada dignissim. Aliquam erat volutpat. Integer blandit lacus eu ligula scelerisque fringilla.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse potenti. Curabitur non nulla sit amet est dictum convallis. Phasellus gravida elementum tellus, vel tempus elit blandit eget.
+
+Proin imperdiet ex at nunc lacinia pulvinar. Integer fermentum, turpis sed auctor suscipit, magna lacus viverra erat, eu ornare est eros non erat. Cras rhoncus sapien id nibh mollis venenatis. Phasellus tempor arcu vel nulla convallis tempus.
+
+Nunc accumsan mi in massa dignissim, ut fermentum ex malesuada at. Ut sit amet magna ac nunc sollicitudin luctus sit amet et leo. Quisque condimentum libero in est euismod, a posuere diam venenatis. Sed gravida risus et neque imperdiet sagittis.
+
+Donec sed lectus et neque pulvinar tempus vel nec neque. Donec dignissim erat et orci mollis faucibus. Proin eget ligula sit amet est fringilla viverra. Cras ut ligula in dui posuere sodales.
+
+In hac habitasse platea dictumst. Etiam sagittis, ex id blandit pulvinar, nulla urna euismod lacus, vel congue risus purus non leo. Integer tincidunt semper elit a malesuada. Phasellus non arcu nec sapien posuere bibendum.
+
+Ut et est vel justo interdum venenatis. Sed sagittis eros ut tellus viverra sodales. Cras sit amet lacus eget tellus blandit ultricies. Proin in metus malesuada, mollis sapien sed, facilisis massa. Donec rutrum diam at leo suscipit bibendum.
+
+Ut a ante et magna luctus venenatis. Integer tempus ex in nunc elementum bibendum. Morbi ut arcu eu elit congue ultricies. Cras venenatis mi id neque dictum, eu porta sem accumsan non. Aliquam erat volutpat." nil)) nil nil nil (("num_ctx" . 8192))) nil)

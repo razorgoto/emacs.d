@@ -1,0 +1,199 @@
+* Version 0.11.14
+- Add interactive template modification for ellama-improve-* functions
+  with universal prefix argument.
+* Version 0.11.13
+- Add ability to use sessions in other elisp packages.
+* Version 0.11.12
+- Fix ellama providers validation.
+* Version 0.11.11
+- Fix llm provider custom variables types.
+* Version 0.11.10
+- Fix commit message generation for partial commits.
+* Version 0.11.9
+- Fix issue when current window was changed after calling
+  ~ellama-generate-commit-message~.
+- Add ~ellama-generate-commit-message~ to keymap.
+* Version 0.11.8
+- Allow ollama-binary to accept the executable's base name.
+* Version 0.11.7
+- Add commit message generation.
+* Version 0.11.6
+- Add link to quoted content in a separate buffer.
+* Version 0.11.5
+- Prevent unnecessary line breaks at the end of generated text.
+* Version 0.11.4
+- Improve code templates and auto-naming.
+* Version 0.11.3
+- Fix autoscrolling for editing commands.
+* Version 0.11.2
+- Inability to use closures on stream done is fixed.
+* Version 0.11.1
+- Add function ~ellama-context-add-text~ for non-intercative usage.
+* Version 0.11.0
+- Refactor markdown to org conversion code. Now all transformations
+  will be applied only outside of code blocks.
+* Version 0.10.2
+- Fix bug when translation from markdown to org syntax breaks python
+  code blocks.
+* Version 0.10.1
+- Add ~ellama-solve-domain-specific-problem~ command. It leverages the
+  popular "act like a professional" prompt engineering method,
+  enhanced by an automated planning step.
+* Version 0.10.0
+- Add ~ellama-solve-reasoning-problem~ command that implements
+  [[https://arxiv.org/pdf/2406.12442][Absctraction of Thought]] technique. It uses a chain of multiple
+  messages to LLM and help it to provide much better answers on
+  reasoning problems. Even small LLMs like [[https://ollama.com/library/phi3][phi3-mini]] provides much
+  better results on reasoning tasks using AoT.
+* Version 0.9.11
+- Transform org quote content to avoid rendering issues.
+* Version 0.9.10
+- Add file quote context elements.
+* Version 0.9.9
+- Add info node quote context elements.
+* Version 0.9.8
+- Copy context from previous session on creating new session. This is
+  useful when you create new session by calling ~ellama-ask-about~
+  with prefix argument.
+* Version 0.9.7
+- Add webpage quote context elements.
+* Version 0.9.6
+- Improve code blocks translation from markdown to org.
+* Version 0.9.5
+- Establish a fresh chat session whenever the ~ellama-chat~ function
+  is invoked with a provider different from the one currently in use.
+* Version 0.9.4
+- Improve code blocks translation from markdown to org.
+* Version 0.9.3
+- Support summarize shr url at point (eww and elfeed).
+- Add ellama-chain function for chaining multiple calls to LLMs.
+* Version 0.9.2
+- Allow summarizing urls withoud doctype tag.
+- Summarize url at point.
+* Version 0.9.1
+- Add summarize killring command.
+* Version 0.9.0
+- Improve context management. Make it extendable.
+* Version 0.8.14
+- Don't insert blank line on code change actions.
+* Version 0.8.13
+- Simplify switching between org and markdown.
+* Version 0.8.12
+- Construct a local list instead of pushin to global one.
+* Version 0.8.11
+- Remove ~dash~ dependency.
+- Remove function ~ellama--fill-string~.
+- Rewrite function ~ellama--fill-long-lines~ to use ~fill-region~.
+- Use ~thread-last~ instead of ~->>~ from ~dash~.
+* Version 0.8.10
+- Fix context for chat translation.
+- Refactor translations.
+- Add command for current buffer translation.
+* Version 0.8.9
+- Add chat translation.
+* Version 0.8.8
+- Fix some bad markdown to org translations.
+* Version 0.8.7
+- Fix interactive local model selection for emacs 28.
+* Version 0.8.6
+- Add provider to ~ellama-chat~ arguments.
+* Version 0.8.5
+- Improve working with context:
+  - Fix some ~org-mode~ links.
+  - Add command for adding info nodes into context.
+  - Fix keybindings documentation.
+* Version 0.8.4
+- Fix keybindings. Keymap prefix now not set by default to prevent
+  usage of reserved for end user customisation keys.
+* Version 0.8.3
+- Fix non-chat commands.
+* Version 0.8.2
+- Fix chat on model switching.
+* Version 0.8.1
+- Add naming scheme user option.
+* Version 0.8.0
+- Add context management.
+* Version 0.7.7
+- Apply markdown-to-org filter consistently.
+* Version 0.7.6
+- Eliminate eval call.
+* Version 0.7.5
+- Make ellama-request-mode for cancel active requests.
+* Version 0.7.4
+- Avoid advising global functions. Use minor modes instead.
+* Version 0.7.3
+- Add sessions auto save. If not set will not use named files for new
+  sessions. Enabled by default.
+- ~ellama-major-mode~ used instead of ~ellama-instant-mode~ and used
+  not only for ellama instant buffers, but also for ellama chat
+  buffers.
+* Version 0.7.2
+- Replace / with _ in new note filenames to prevent errors.
+* Version 0.7.1
+- Improve markdown to org conversion.
+- Move readme from markdown to org.
+* Version 0.7.0
+- Switch from markdown to org-mode.
+- Fix bug in session management on buffer kill.
+- Decrease pressure to garbage collector during text generation.
+* Version 0.6.0
+- Implement session management.
+* Version 0.5.8
+- Fix typo in predefined prompts.
+* Version 0.5.7
+- Add ellama-nick-prefix custom variable.
+* Version 0.5.6
+- Add llm name to generated ellama name.
+* Version 0.5.5
+- Add ellama-chat-done-callback.
+* Version 0.5.4
+- Support interactive switch models on remote host.
+* Version 0.5.3
+- Support cancellation.
+* Version 0.5.2
+- Make default prompt templates customizable.
+* Version 0.5.1
+- Use more meaningful buffer names.
+* Version 0.5.0
+- Eliminate aliases.
+* Version 0.4.14
+- Extract ellama-chat-done to separate function.
+* Version 0.4.13
+- Use custom-set-default in set function for custom variables.
+* Version 0.4.12
+- Add option to customize paragraphs filling behaviour.
+* Version 0.4.11
+- Fix compilation
+* Version 0.4.10
+- Add customization group.
+- Call ellama-setup-keymap on prefix change.
+* Version 0.4.9
+- Call fill-region only for non-programming modes.
+* Version 0.4.8
+- Improve lines wrapping.
+* Version 0.4.7
+- Simplify scroll logic.
+* Version 0.4.6
+- Fix code trimming.
+* Version 0.4.5
+- Refactoring. Eliminate duplicated code.
+- Fix minor bugs with error handling.
+* Version 0.4.4
+- Fix ellama-render interactive spec.
+* Version 0.4.3
+- Fix scrolling during generation.
+- Add auto scrolling for all commands.
+* Version 0.4.2
+- Add auto scrolling. Disabled by default.
+* Version 0.4.1
+- Fix adding and completing code. Do it inline instead of end of buffer.
+* Version 0.4.0
+- Add interactive provider selection.
+* Version 0.3.2
+- Change keymap prefix to prevent default binding overwriting.
+* Version 0.3.1
+- Minor fixes in custom variables.
+* Version 0.3.0
+- Add keymap.
+* Version 0.2.0
+- Move to GNU ELPA.
